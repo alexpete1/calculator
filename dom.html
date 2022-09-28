@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+    <style>
+        .pointer-link {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <div class="pointer-link">
+    <h1 id="first" onclick="expandDom()">DOM 1</h1>
+   <div id="result"></div>
+   </div>
+   <!-- <h1 id="first" onclick="expandDom()">
+    <a href="">DOM</a>
+   </h1> -->
+   <h1>DOM 2</h1>
+   <h3 class=""cls >DOM ELEMENTS</h3>
+   <ol>
+    <li class=""cls>using tag name - document.getElementsByTagName('h1')</li>
+    <li>using id name - document.getElementById('id name')</li>
+    <li>using class name - document.getElementsByClassName('class name')</li>
+    <li>using querySelector - document.querySelector(class name,idname)</li>
+    <li>using querySelectorAll - document.querySelectorAll(class name,idname,tag)</li>
+   </ol>
+    
+</body>
+<script>
+    function expandDom(){
+        expand=document.querySelector('#first').value
+        console.log(first);
+        data=`<p>Document Object Model</p>`
+        document.querySelector('#result').innerHTML=data;
+    }
+</script>
+</html>
