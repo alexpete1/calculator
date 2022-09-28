@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="row">
-        
         <div class="col-4"></div>
-        <div class="col-4 m-5 rounded-3 bg-secondary">
+        <div class="col-4">
             <input id="result" type="text" size="55%" class="ms-3 mt-5 rounded-5" style="height: 80px;" class="form-control" placeholder="Enter">
             <br>
             <button id="ac" onclick="clearBox()" class="btn-primary rounded-3 mt-5 ms-4 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">AC</button>
@@ -41,9 +39,7 @@
             <button id="=" onclick="evaluateExpression()" class="btn-secondary rounded-3 ms-2 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">=</button>
             <button id="+" onclick="displayNumber('+')" class="btn-secondary rounded-3 ms-3 mb-5 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">+</button>
         </div>
-        <div class="col-4"></div>
+
     </div>
-    
 </body>
-<script src="./cal.js"></script>
 </html>
